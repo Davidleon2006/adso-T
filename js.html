@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo de javascrip</title>
+    <style type="text/css">
+        .circulo{
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-right: 50px;
+            border-radius: 50%;
+        }
+        #circulo_rojo{
+            background-color: red;
+        }
+        #circulo_verde{
+            background-color: green;
+        }
+        #circulo_amarillo{
+            background-color: yellow;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h2>ejemplo1</h2>
+    <button onclick="alert('hola a todos')">has clik aqui y seras feliz</button>
+    <h2>ejemplo2</h2>
+    <p id="texto">hola aprendiz de Adso</p>
+    <button id="boton">cambiar texto</button>
+    <script>
+        document.getElementById("boton").onclick = function () {
+            document.getElementById("texto").innerHTML = "Tecnologos Adso";
+        }
+    </script>
+    <h2>ejemplo3</h2>
+    <div id="circulo_rojo" class="circulo"></div>
+    <div id="circulo_verde" class="circulo"></div>
+    <div id="circulo_amarillo" class="circulo"></div>
+    <script>
+        document.getElementById("circulo_rojo").onclick = function () {
+            document.getElementById("circulo_rojo").style.display = "none";
+        }
+        document.getElementById("circulo_verde").onclick = function () {
+            document.getElementById("circulo_verde").style.display = "none";
+        }
+        document.getElementById("circulo_amarillo").onclick = function () {
+            document.getElementById("circulo_amarillo").style.display = "none";
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

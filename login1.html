@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login1</title>
+    </head>
+    <body>
+        <h2>login1</h2>
+        <form name="form" action="bienvenido.html">
+            <p>usuario: <input type="text"name="loging"></p>
+            <p>contraseña: <input type="password"name="password"></p>
+            <input onclick="go()" type="button" value="Acceder">
+        </form>
+
+        <script>
+            function go(){
+                if (document.form.password.value == 'Contraseña' && document.form.login.value == 'Usuario'){
+                    document.form.submit();
+                    //si el usuario y la contraseña son correctos lo envia 
+                }
+                else{
+                    alert("Por favor ingresar los datos correctos")
+                }
+            }
+
+        </script>
+    </body>
+    </html>

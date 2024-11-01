@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login3</title>
+</head>
+
+<body>
+    <h2>login3</h2>
+    <form>
+        <input type="text" id="user" placeholder="usuario">
+        <input type="password" id="pass" placeholder="contraseña">
+        <button onclick="iniciarsesion()">verificar</button>
+
+    </form>
+    <script>
+        const users = [
+        {email:'luis', contrasena: '123' },
+        {email:'caballo', contrasena: '456' },
+        {email:'jansen', contrasena: '789' },
+        {email:'mocho', contrasena: '000' },
+        
+        ];
+        function iniciarsesion() {
+            var user_ =document.getElementById('user').value;
+            var pass_ =document.getElementById('pass').value;
+            var verify = !!users.find(element=> element.email === user_ && element.contrasena == pass_)
+            console.log(verify);
+            if(verify){
+                alert("usuario y contraseña correctos.  BIENVENIDO");
+            }
+            else{
+                alert("usuario y contraseña incorrecta");
+            }
+        }
+        
+    </script>
+
+
+
+</body>
+
+</html>

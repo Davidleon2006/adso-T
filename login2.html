@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login2</title>
+</head>
+<body>
+    <h2>login2</h2>
+    <form name="form" action="bienvenido.html">
+        <p>usuario: <input type="text"name="login" placeholder="escriba su usuario"></p>
+        <p>contraseña: <input type="password"name="password" placeholder="dijite su contraseña"></p>
+        <input onclick="go()" type="button" value="Acceder">
+    </form>
+    <script>
+        function go(){
+            //defino las variables con los parametros 
+            var usuario_ = document.form.login.value; 
+            var contrasena_ = document.form.password.value;
+            //creamos los usuarios
+            if(usuario_ == 'Usuario1' && contrasena_ == 'Contraseña1'){
+                window.location = "bienvenido.html"
+            }
+            else if(usuario_ == 'Usuario2' && contrasena_ == 'Contraseña2'){
+                window.location = "bienvenido.html"
+            }
+            else if(usuario_ == 'Usuario3' && contrasena_ == 'Contraseña3'){
+                window.location = "bienvenido.html"
+            }
+            else{
+                alert("Por favor ingresar los datos correctos")
+            }
+
+        }
+    </script>
+</body>
+</html>
